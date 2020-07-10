@@ -1,0 +1,42 @@
+// JUMBOTRON
+.jumbo{
+  @include display_flex;
+  height: 600px;
+  padding: 30px;
+  padding-top: 50px;
+
+  // Left side of Jumbotron
+  .jumbo_left{
+    h1{
+      font-size: 45px;
+      line-height: 70px;
+      font-weight: 900;
+    }
+
+
+    .btn_container{
+      @include display_flex;
+      
+      .btn{
+        @include btn_general;
+        @include btn_secondary;
+      }
+      span{
+        align-self: center;
+        padding: 0 4px
+      }
+    }
+
+  }
+  // Right Side of Jumbotron
+  .jumbo_right{
+    padding: 20px;
+    img{
+      width: 100%;
+      height: 75%;
+    }
+
+
+  }
+
+}

@@ -2,5 +2,120 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #58402c;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  display: flex;
+  font-weight: 700;
+  text-align: center;
+  color: #ffff;
+  background-color: #2c4792;
+  border: none;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #58402c;
+  justify-content: center;
+}
+
+header nav .logo {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav .right_nav {
+  width: 100%;
+}
+
+header nav .right_nav .nav_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header nav .right_nav .nav_items li {
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+header nav .right_nav .btn {
+  display: flex;
+  font-weight: 700;
+  text-align: center;
+  color: #ffff;
+  background-color: #2c4792;
+  border: none;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 105px;
+}
+
+header nav .right_nav .btn img {
+  width: 30%;
+  height: 100%;
+  padding-right: 5px;
+}
+
+.jumbo {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  padding: 30px;
+  padding-top: 50px;
+}
+
+.jumbo .jumbo_left h1 {
+  font-size: 45px;
+  line-height: 70px;
+  font-weight: 900;
+}
+
+.jumbo .jumbo_left .btn_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.jumbo .jumbo_left .btn_container .btn {
+  display: flex;
+  font-weight: 700;
+  text-align: center;
+  color: #ffff;
+  background-color: #2c4792;
+  border: none;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 220px;
+}
+
+.jumbo .jumbo_left .btn_container .btn img {
+  width: 30px;
+  height: 60%;
+}
+
+.jumbo .jumbo_left .btn_container span {
+  align-self: center;
+  padding: 0 4px;
+}
+
+.jumbo .jumbo_right {
+  padding: 20px;
+}
+
+.jumbo .jumbo_right img {
+  width: 100%;
+  height: 75%;
 }
 

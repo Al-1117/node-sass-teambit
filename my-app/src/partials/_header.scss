@@ -1,0 +1,43 @@
+
+header{
+  // NAVIGATION
+  nav{
+
+    @include display_flex;
+    @include border_bottom;
+    justify-content: center;
+
+    // Logo
+    .logo{
+      @include display_flex
+    }
+    // Right Nav side
+    .right_nav{
+      width: 100%;
+
+
+      // Nav items
+      .nav_items {
+        @include display_flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        li{
+          display: inline-block;
+          padding: 0 10px;
+          font-weight: 600;
+        }
+      }
+      // Navigation Buttons
+      .btn{
+        @include btn_general;
+        @include btn_primary;
+      }
+
+
+
+    }
+
+  }
+}
+  // END OF NAVIGATION
