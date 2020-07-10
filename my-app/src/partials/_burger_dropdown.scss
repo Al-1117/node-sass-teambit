@@ -1,0 +1,22 @@
+
+.burger_dropdown{
+  @media all and (max-width: 992px){
+    z-index: 1;
+    background-color: #ffff;
+    margin-top: 10px;
+    .dropdown_items li{
+      font-weight: $font_bold;
+      list-style: none;
+      padding: 10px 0px;
+
+      .btn{
+        height: 55px;
+        width: 95%;
+        img{
+          height: 65%;
+        }
+      }
+    }
+
+  }
+}

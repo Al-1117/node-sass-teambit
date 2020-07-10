@@ -7,6 +7,22 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+// general Btn
 .btn{
   @include btn_general
+}
+
+// Defaul List Style
+ul li{
+  list-style: none;
+}
+
+// active
+
+.active{
+  display: block;
+}
+
+.hidden{
+  display: none;
 }

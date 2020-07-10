@@ -2,30 +2,78 @@
 header{
   // NAVIGATION
   nav{
-
     @include display_flex;
     @include border_bottom;
     justify-content: center;
 
+    // For medium and small devices
+    @media all and (max-width: 992px){
+      height: 100px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
     // Logo
     .logo{
-      @include display_flex
+      @include display_flex;
+      // For medium and small devices
+      @media all and (max-width: 992px){
+        padding-left: 15px;
+        height: 100%;
+        img{
+          width: 180px;
+
+        }
+      }
     }
     // Right Nav side
     .right_nav{
       width: 100%;
 
+      @media all and (max-width: 992px){
+        width: auto;
+        align-self: center;
+      }
 
       // Nav items
       .nav_items {
         @include display_flex;
         justify-content: flex-end;
         align-items: center;
+        // For medium and small devices
+        @media all and (max-width: 992px){
+          display: none;
+
+        }
 
         li{
           display: inline-block;
           padding: 0 10px;
           font-weight: 600;
+        }
+      }
+
+      .burger_section{
+        display: none;
+        // For medium and small devices
+        @media all and (max-width: 992px){
+          display: block;
+          .burger_icons{
+            width: 100%;
+            display: inline-flex;
+            text-align: right;
+            font-size: 30px;
+            justify-content: flex-end;
+            align-self: center;
+
+            .menu_icon i{
+              padding-right: $padding_15;
+            }
+
+            .close_icon i{
+              padding-right: $padding_15;
+            }
+          }
         }
       }
       // Navigation Buttons
@@ -39,5 +87,6 @@ header{
     }
 
   }
+
 }
   // END OF NAVIGATION
