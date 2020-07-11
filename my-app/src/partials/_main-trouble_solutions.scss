@@ -1,0 +1,54 @@
+// TROUBLES AND SOLUTION SECTIONS
+
+.primary_section{
+  @include primary_section;
+  .content{
+    @include display_flex;
+    justify-content: center;
+    .box{
+      padding: 20px;
+      img{
+        width: 180px;
+        height: 130px;
+      }
+      p{
+        padding: 10px 0px;
+        font-size: 1rem;
+      }
+    }
+  }
+  .bottom_image{
+    @include border_bottom;
+    padding: 60px 0;
+    img{
+      width: 35%;
+    padding-top: 30px;
+
+    padding-bottom: 60px;
+    }
+  }
+}
+
+#solution{
+  .box-3{
+    img{
+      width: 100px;
+    }
+  }
+  .bottom_image{
+    border-bottom: none;
+  }
+}
+// Rules for small devices
+@media all and (max-width: 992px){
+  #troubles{
+    margin-top: 600px;
+  }
+  .primary_section{
+    .content{
+      display: inline-block;
+    }
+
+  }
+
+}

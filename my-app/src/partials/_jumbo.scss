@@ -13,31 +13,10 @@
       font-weight: 900;
     }
     h3{
-      line-height: 40px;
-      font-size: 22px;
+      @include h3_style;
       padding-bottom: 130px;
     }
-    .your_email{
-      padding-top: 15px;
-
-      i{
-        padding-left: 5px;
-      }
-    }
-
-
-    .btn_container{
-      @include display_flex;
-
-      .btn{
-        @include btn_general;
-        @include btn_secondary;
-      }
-      span{
-        align-self: center;
-        padding: 0 4px
-      }
-    }
+    
 
   }
   // Right Side of Jumbotron
@@ -50,5 +29,66 @@
 
 
   }
+
+}
+// General rules for small devices
+@media all and (max-width: 992px){
+  // JUMBOTRON
+  .jumbo{
+    flex-direction: column;
+    // Left side of Jumbotron
+    .jumbo_left{
+      h1{
+        font-size: $title_bigger;
+        line-height: 90px;
+      }
+      h3{
+        line-height: 80px;
+        font-size: 40px;
+        padding-bottom: 50px;
+      }
+      .your_email{
+        padding-top: 15px;
+        text-align: center;
+
+        i{
+          padding-left: 5px;
+        }
+      }
+
+
+      .btn_container{
+        @include display_flex;
+        justify-content: center;
+
+        .btn{
+          width: 300px;
+          height: 60px;
+        }
+        span{
+          align-self: center;
+          padding: 0 4px
+        }
+      }
+
+    }
+    // Right Side of Jumbotron
+    .jumbo_right{
+      img{
+        height: 85%;
+      }
+
+
+    }
+
+  }
+
+
+
+
+
+
+
+
 
 }

@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: $priamry_color;
+  color: $primary_color;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -11,6 +11,30 @@ body {
 .btn{
   @include btn_general
 }
+
+.btn_container{
+  @include display_flex;
+
+  .btn{
+    @include btn_general;
+    @include btn_secondary;
+  }
+  span{
+    align-self: center;
+    padding: 0 4px
+  }
+}
+
+.your_email{
+  padding-top: 15px;
+
+  i{
+    padding-left: 5px;
+  }
+}
+
+
+
 
 // Defaul List Style
 ul li{
@@ -25,4 +49,12 @@ ul li{
 
 .hidden{
   display: none;
+}
+
+@media all and (max-width: 992px){
+  body{
+
+    font-size: 1.6rem;
+  }
+
 }
